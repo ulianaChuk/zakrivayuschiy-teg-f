@@ -208,7 +208,6 @@
 
 .article__text {
   font-size: 18px;
-  line-height: 21px;
   display: flex;
   flex-direction: column;
   gap: 27px;
@@ -289,6 +288,7 @@
   color: var(--button-text-color, #ffffff);
   transition: 0.5s ease-in-out;
   /* mix-blend-mode: difference; */
+  background-color: transparent;
 }
 .button__icon {
   z-index: 1;
@@ -311,7 +311,6 @@
   font-weight: var(--font_weight_title);
   font-size: 14px;
   line-height: 90%;
-  padding: 15px 21px;
   min-width: 306px;
   background-color: var(--bg-color, #ffffff);
   border: 2px var(--accent-color, #000000) solid;
@@ -367,7 +366,7 @@
   .header {
     padding-block-start: 136px;
   }
-  
+
   .modal {
     padding: 28px 34px 28px 40px;
   }
