@@ -4,3 +4,83 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-light {
+  --font-family_accent: "PressStart2P-Regular";
+  --font-family_body: "Inter-Variable";
+  --font_weight_title: 700;
+  --font_weight_body: 400;
+
+  --bg-color: #ffffff;
+  --bg-img: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+  --accent-color: #000000;
+  --text-color: var(--accent-color, #000000);
+  --icon-color: #ff0000;
+  --button-text-color: #ffffff;
+
+}
+
+/* @media (prefers-color-scheme: light){
+    :root{
+        --font-family_accent: "PressStart2P-Regular";
+        --font-family_body: "Inter-Variable";
+        --font_weight_title: 700;
+        --font_weight_body: 400;
+        
+        --bg-color: #FFFFFF;
+        --accent-color: #000000;
+        --icon-color:#FF0000;
+        
+        
+        }
+} */
+
+:root.theme-dark {
+  --font-family_accent: "PressStart2P-Regular";
+  --font-family_body: "Inter-Variable";
+  --font_weight_title: 785;
+  --font_weight_body: 465;
+
+  --bg-color: #000000;
+  --bg-img: repeating-linear-gradient(
+      to right,
+      #000 0px 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #000 0px 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #007f0c 0.01%, #004306);
+  --accent-color: #00cc14;
+  --text-color: var(--accent-color, #00cc14);
+  --icon-color: #ff0000;
+  --button-text-color: #000000;
+  /* --button-text-color:#000000; */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-family_accent: "PressStart2P-Regular";
+    --font-family_body: "Inter-Variable";
+    --font_weight_title: 785;
+    --font_weight_body: 465;
+
+    --bg-color: #000000;
+    --bg-img: repeating-linear-gradient(
+        to right,
+        #000 0px 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(to bottom, #000 0px 2px, transparent 2px 4px),
+      linear-gradient(to bottom, #007f0c 0.01%, #004306);
+    --accent-color: #00cc14;
+    --text-color: var(--accent-color, #00cc14);
+
+    --icon-color: #ff0000;
+
+    --button-text-color: #000000;
+  }
+}
