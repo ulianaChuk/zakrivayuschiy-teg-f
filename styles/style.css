@@ -17,13 +17,13 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--font-family_body, sans-serif);
+  font-family: var(--font-family_body, sans-serif),sans-serif;
   font-size: 18px;
   font-variation-settings: "wght" var(--font_weight_body);
   background-color: var(--bg-color, #ffffff);
   background-image: var(--bg-img);
   background-attachment: fixed;
-  color: var(--accent-color);
+  color: var(--accent-color, #000000);
 }
 
 .header {
@@ -35,7 +35,7 @@
   
   background-color: var(--bg-color, #ffffff);
   border: 2px var(--accent-color, #000000) solid;
-  font-family: var(--font-family_accent, fantasy);
+  font-family: var(--font-family_accent, fantasy),fantasy;
 
   margin: 100px auto;
   padding-block-start: 120px;
@@ -109,6 +109,7 @@
 .theme-menu__button::before {
   content: "▶";
   right: 100%;
+  top: 0;
   position: absolute;
   color: transparent;
   pointer-events: none;
@@ -118,23 +119,19 @@
   color: currentColor;
   animation: arrow 0.5s ease-in-out infinite alternate;
 }
-
-.card__list {
+.main{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 47px;
 }
 
-.cards__list-item {
-  inline-size: clamp(375px, 48.6%, 700px);
-  background-color: var(--bg-color, #ffffff);
-  border: 2px var(--accent-color, #000000) solid;
-}
-
 .article {
   display: flex;
   flex-direction: column;
+  inline-size: clamp(375px, 48.6%, 700px);
+  background-color: var(--bg-color, #ffffff);
+  border: 2px var(--accent-color, #000000) solid;
 }
 
 .article__title {
@@ -146,13 +143,15 @@
 
 .card__img-wrapper {
   position: relative;
+  border-top: 2px var(--accent-color, #000000) solid;
+    border-bottom: 2px var(--accent-color, #000000) solid;
 }
 
 .card__img-label {
   position: absolute;
   top: 23px;
   right: 11px;
-  font-family: var(--font-family_accent, fantasy);
+  font-family: var(--font-family_accent, fantasy),fantasy;
   font-size: 14px;
   opacity: 0.5;
   color: var(--accent-color, #000000);
@@ -164,8 +163,8 @@
 
 @supports ((text-stroke: 1px #000000) or (-webkit-text-stroke: 1px #000000)) {
   .card__img-label {
-    -webkit-text-stroke: 1px var(--bg-color);
-    text-stroke: 1px var(--bg-color);
+    -webkit-text-stroke: 1px var(--bg-color, #ffffff);
+    text-stroke: 1px var(--bg-color, #ffffff);
     text-shadow: none;
   }
 }
@@ -247,7 +246,7 @@
   z-index: 0;
   background-color: transparent;
   border: 2px var(--accent-color, #000000) solid;
-  font-family: var(--font-family_accent);
+  font-family: var(--font-family_accent, fantasy),fantasy;
 
   cursor: pointer;
 }
@@ -306,8 +305,7 @@
 }
 
 .save__button {
-  /* background-color:transparent; */
-  font-family: var(--font-family_accent);
+  font-family: var(--font-family_accent, fantasy),fantasy;;
   font-weight: var(--font_weight_title);
   font-size: 14px;
   line-height: 90%;
@@ -320,7 +318,6 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  /* z-index: 0; */
 }
 
 .modal {
@@ -328,7 +325,7 @@
   border: 2px solid var(--accent-color, #000000);
   background-color: var(--bg-color, #ffffff);
   color: var(--text-color, #000000);
-  font-family: var(--font-family_accent, "PressStart2P", fantasy);
+  font-family: var(--font-family_accent, fantasy),fantasy;
   line-height: 21px;
   font-size: 14px;
   text-transform: uppercase;
