@@ -17,7 +17,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--font-family_body, sans-serif),sans-serif;
+  font-family: var(--font-family_body, sans-serif), sans-serif;
   font-size: 18px;
   font-variation-settings: "wght" var(--font_weight_body);
   background-color: var(--bg-color, #ffffff);
@@ -32,10 +32,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  
+
   background-color: var(--bg-color, #ffffff);
   border: 2px var(--accent-color, #000000) solid;
-  font-family: var(--font-family_accent, fantasy),fantasy;
+  font-family: var(--font-family_accent, fantasy), fantasy;
 
   margin: 100px auto;
   padding-block-start: 120px;
@@ -57,7 +57,6 @@
 .header__theme-menu {
   font-size: 14px;
   padding-left: 20px;
-  
 }
 
 .theme-menu__list {
@@ -119,7 +118,7 @@
   color: currentColor;
   animation: arrow 0.5s ease-in-out infinite alternate;
 }
-.main{
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -144,14 +143,14 @@
 .card__img-wrapper {
   position: relative;
   border-top: 2px var(--accent-color, #000000) solid;
-    border-bottom: 2px var(--accent-color, #000000) solid;
+  border-bottom: 2px var(--accent-color, #000000) solid;
 }
 
 .card__img-label {
   position: absolute;
   top: 23px;
   right: 11px;
-  font-family: var(--font-family_accent, fantasy),fantasy;
+  font-family: var(--font-family_accent, fantasy), fantasy;
   font-size: 14px;
   opacity: 0.5;
   color: var(--accent-color, #000000);
@@ -246,7 +245,7 @@
   z-index: 0;
   background-color: transparent;
   border: 2px var(--accent-color, #000000) solid;
-  font-family: var(--font-family_accent, fantasy),fantasy;
+  font-family: var(--font-family_accent, fantasy), fantasy;
 
   cursor: pointer;
 }
@@ -305,7 +304,7 @@
 }
 
 .save__button {
-  font-family: var(--font-family_accent, fantasy),fantasy;;
+  font-family: var(--font-family_accent, fantasy), fantasy;
   font-weight: var(--font_weight_title);
   font-size: 14px;
   line-height: 90%;
@@ -325,7 +324,7 @@
   border: 2px solid var(--accent-color, #000000);
   background-color: var(--bg-color, #ffffff);
   color: var(--text-color, #000000);
-  font-family: var(--font-family_accent, fantasy),fantasy;
+  font-family: var(--font-family_accent, fantasy), fantasy;
   line-height: 21px;
   font-size: 14px;
   text-transform: uppercase;
